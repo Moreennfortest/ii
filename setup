@@ -1,5 +1,4 @@
-#!/bin/bash
-### Yukki Music Bot Installer
+
 
 pprint (){
 	cred='\033[0;31m'
@@ -90,12 +89,12 @@ installation(){
 }
 
 clear
-pprint "Welcome to Yukki Music Bot Setup Installer\n\n"
+pprint "مرحبًا بك في مثبت إعداد MAGGIE Music Bot\n\n"
 pprint "If you see any error during Installation Process, Please refer to these files for logs: "
 pprint "\nFor node js errors , Checkout nodelog.txt"
-pprint "\nFor pypi packages errors , Checkout pypilog.txt"
+pprint "\nلأخطاء حزم pypi , Checkout pypilog.txt"
 sleep 2
-pprint "\n\nScript needs sudo privileges in order to update & install packages.\n"
+pprint "\n\nيحتاج البرنامج النصي إلى امتيازات sudo لتحديث الحزم وتثبيتها.\n"
 sudo test
 
 update
@@ -103,7 +102,7 @@ packages
 node
 repo
 installation
-pprint "\n\n\n\n\nYukki Music Bot Installation Completed!" "cgreen"
+pprint "\n\n\n\n\nاكتمل تثبيت MAGGIE Music Bot!" "cgreen"
 sleep 4
 clear
 
@@ -117,7 +116,7 @@ pprint "\nPYROGRAM STRING SESSION OF ASSISTANT ACCOUNT: "; color_reset; read str
 pprint "\nMUSIC BOT NAME: "; color_reset; read mbt
 pprint "\nOwner Id:"; color_reset; read ownid
 
-pprint "\n\nProcessing your vars, Wait a while!" "cgreen"
+pprint "\n\nتجهيز vars الخاص بك ، انتظر بعض الوقت!" "cgreen"
 
 if [ -f .env ]; then
 	rm .env
@@ -132,6 +131,6 @@ MUSIC_BOT_NAME = $mbt
 STRING_SESSION = $string_session
 OWNER_ID = $ownid""" > .env
 clear
-pprint "\n\n\nYour Vars have been saved Successfully!, Thanks for using Yukki Installer, now you can proceed by starting the bot with bash start!"
-pprint "\n\n\nWant more vars?"
-pprint "\nCheckout config.py and readme.md inside config folder for addtional vars. You can change all images , Thumbs, mode and everything from vars. Have a look towards them\n\n"
+pprint "\n\n\nتم حفظ Vars الخاصة بك بنجاح !، شكرًا لاستخدامك MAGGIE Installer ، الآن يمكنك المتابعة ببدء تشغيل الروبوت ببدء bash!"
+pprint "\n\n\nنريد المزيد من vars?"
+pprint "\nتحقق من config.py و readme.md داخل مجلد التكوين للحصول على متغيرات إضافية. يمكنك تغيير جميع الصور والإبهام والوضع وكل شيء من vars. الق نظرة تجاههم\n\n"
